@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.main{
+
+}
+
+.header{
+    height: 50px;
+    background-color: dodgerblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav, .subnav, .sub-nav-content{
+    list-style-type: none;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav>li>a {
+    color: #ffff;
+}
+
+.nav li a {
+    color: #ffff;
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    padding: 0 25px;
+}
+
+.nav > li:hover .subnav{
+    display: block;
+}
+
+.nav > li:hover > a{
+    color: #ffff;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.nav .subnav li:hover a{
+    color: #ffff;
+    background-color: dodgerblue;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.nav .subnav{
+    display: none;
+    position: absolute;
+    top : 100%;
+    left: 0;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3) ;
+    width: 10rem;
+}
+
+.nav .subnav a{
+    color: #000;
+}
+
+.nav .nav-dropdown {
+    font-size: 10px;
+}
+
+.header .search-btn{
+    float: right;
+    line-height: 50px;
+    padding: 0 16px;
+    display: inline-block;
+    width: 250px;
+    background: #efefef;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.header .search-btn input{
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.header .search-icon {
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-family: Cursive;
+    font-size:x-large;
+    color: palevioletred;
+    display: inline-block;
+    padding: 10px;
+}
+
+.header .login-btn {
+    float: right;
+    display: flex;
+    height: 50px;
+}
+
+.header .login-btn a{
+    color: #ffff;
+    text-decoration: none;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    line-height: 50px;
+}
+
+.header .login-btn > a >img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+    /* clip-path: circle(); */
+    border-radius: 50%;
+}
+
+.header .login-btn > a > p {
+    padding-left:10px ;
+}
+
+.header .login-btn:hover a{
+    color: #ffff;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.header .notification-btn{
+    float: right;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+
+.header .notification-btn a{
+    text-decoration: none;
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 5px;
+}
+
+.notification-icon {
+    color: #ffff;
+    font-size: 20px;
+}
+
+.header .notification-btn:hover a{
+    color: #ffff;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.message{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    display: block;
+    z-index: 2;
+}
+
+.message a{
+    text-decoration: none;
+    color: #ffff;
+    display: block;
+    padding: 8px;
+}
+
+.message i{
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    box-shadow: 0 0 10px rgba(0 , 0 , 5);
+}
+
+.message:hover i{
+    color: #ffff;
+    background-color: rgb(24, 24, 199);
+}
+
+.slider{
+    position: relative;
+    margin-top: 50px;
+    height: 280px;
+    background: rgb(167, 203, 240);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+.slider .slider-name h2{
+    font-size: 40px;
+    color: palevioletred;
+    line-height: 1.5;
+    /* font-style: oblique; */
+}
+
+.slider .slider-name p{
+    padding: 5px;
+}
+
+.couser-rating{
+    display: inline-block;
+    padding: 15px;
+}
+
+.couser-rating input{
+    display: none;
+}
+
+
+.couser-rating label{
+    position: relative;
+    cursor: pointer;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.couser-rating label::before{
+    content: '\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: yellow;
+}
+
+.content-container{
+    margin: 5px 0 10px 0;
+    padding: 20px 50px;
+    width: 100%;
+    min-height: 800px;
+}
+
+.video {
+    float: left;
+    padding: 10px 90px;
+}
+
+.video-img img{
+    float: left;
+    width: 100%;
+    border: 1px solid #000 ;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.icon-video {
+    float: left;
+    width: 100%;
+    background: rgb(66, 62, 62);
+    padding: 10px 0;
+}
+
+.icon-video i{
+    color: #fff;
+    font-size: 30px;
+    padding: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.note {
+    display: flex;
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+}
+
+.note input{
+    width: 95%;
+    height: 45px;
+    padding: 5px;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(106, 101, 101);
+}
+
+.note2 > i {
+    font-size: 30px;
+    color: rgb(106, 101, 101);
+    background: #fff;
+    padding: 5px;
+}
+
+.assignment-qizz {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* .assignment {
+    padding: 5px;
+    margin: 0 20px;
+}
+
+.qizz {
+    padding: 5px;
+    margin-left: 100px;
+    margin-right: 20px;
+} */
+
+.assignment a, .qizz a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 50px;
+    margin: 0 100px;
+    background: rgb(152, 85, 85);
+    color: #000;
+}
+
+
+
+.assignment a:hover, .qizz a:hover {
+    background: rgb(145, 38, 38);
+    color: #ffff;
+}
+ 
+
+.footer{
+    padding: 64px 0 ;
+    text-align: center;
+    background-color: rgb(167, 203, 240);
+}
+
+.social-list{
+    font-size: 25px;
+}
+
+.social-list a{
+    color: rgba(0 , 0 , 0.3);
+    text-decoration: none;
+}
+
+.social-list a:hover {
+    color: #cccc;
+}

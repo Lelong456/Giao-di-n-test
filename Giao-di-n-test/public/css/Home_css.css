@@ -1,0 +1,444 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.main{
+
+}
+
+.header{
+    height: 50px;
+    background-color: dodgerblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav, .subnav {
+    list-style-type: none;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav>li>a {
+    color: #ffff;
+}
+
+.nav li a {
+    color: #ffff;
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    padding: 0 25px;
+}
+
+.nav > li:hover .subnav{
+    display: block;
+}
+
+.nav > li:hover > a{
+    color: #ffff;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.nav .subnav li:hover a{
+    color: #ffff;
+    background-color: dodgerblue;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.nav .subnav{
+    display: none;
+    position: absolute;
+    top : 100%;
+    left: 0;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3) ;
+    width: 10rem;
+}
+
+.nav .subnav a{
+    color: #000;
+}
+
+.nav .nav-dropdown {
+    font-size: 10px;
+}
+
+.header .search-btn{
+    float: right;
+    line-height: 50px;
+    padding: 0 16px;
+    display: inline-block;
+    width: 250px;
+    background: #efefef;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.header .search-btn input{
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.header .search-icon {
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-family: Cursive;
+    font-size:x-large;
+    color: palevioletred;
+    display: inline-block;
+    padding: 10px;
+}
+
+.header .login-btn {
+    float: right;
+    line-height: 50px;
+}
+
+.header .login-btn a{
+    color: #ffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .login-btn:hover a{
+    color: #ffff;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.slider{
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50%;
+    background: url('/public/img/anh_nen4.png') top center / cover no-repeat;
+}
+
+.slider .text-content{
+    position: absolute;
+    bottom: 200px;
+    /*
+    left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+}
+
+.slider .text-heading{
+    font-family: Cursive;
+    font-size: 80px;
+    color: palevioletred;
+}
+.slider .text-description{
+    font-family: Times New Roman;
+    color: palevioletred;
+    font-size: 30px;
+}
+
+.content{
+    
+}
+
+.content .content-section{
+    width : 800px;
+    padding: 70px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .section-heading{
+    text-align: center;
+    font-family: Cursive;
+    color: palevioletred;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.content .section-sub-heading{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.content .about-text{
+    text-align: justify;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.content .container-couser{
+    background-color:dodgerblue;
+    padding: 50px;
+}
+
+.couser-section{
+    padding: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.couser{
+    padding: 0 100px;
+    margin-bottom: 30px;
+}
+
+.couser-item{
+    float: left;
+    width: 33.33%;
+    padding: 0 50px;
+    display: inline-block;
+}
+
+.couser-item img{
+    width: 300px;
+    height: 250px;
+}
+
+.couser-body{
+    background: #ffff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.couser-body img{
+    width: 300px;
+    height: 250px;
+}
+
+.couser-body p,
+.couser-body h3 {
+    padding: 10px;
+}
+
+.couser-body a {
+    color: #ffff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background: dodgerblue;
+}
+
+.couser-body a:hover {
+    color: #ffff;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0.3);
+}
+
+.couser-rating{
+    display: inline-block;
+    padding: 15px;
+}
+
+.couser-rating input{
+    display: none;
+}
+
+
+.couser-rating label{
+    position: relative;
+    cursor: pointer;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.couser-rating label::before{
+    content: '\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: yellow;
+}
+
+.footer{
+    padding: 64px 0 ;
+    text-align: center;
+}
+
+.social-list{
+    font-size: 25px;
+}
+
+.social-list a{
+    color: rgba(0 , 0 , 0.3);
+    text-decoration: none;
+}
+
+.social-list a:hover {
+    color: #cccc;
+}
+
+.modal-login{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(118, 113, 113, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    /* chuyển sang display: flex  thì nó sẽ hiện lên */
+}
+
+.modal-container{
+    background-color: rgb(120, 188, 255);
+    width: 335px;
+    max-width: calc(100% - 32px);
+    min-height: 480px;
+    padding: 10px;
+    position: relative;
+}
+
+.modal-container h2{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cursive;
+    color: palevioletred;
+}
+
+.modal-container .modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    color: #ffff;
+}
+
+.modal-container .modal-close:hover{
+    background: red;
+}
+
+.modal-container .modal-body-login{
+    padding: 20px;
+    height: 330px;
+}
+
+.modal-form-item{
+    margin-bottom: 16px;
+
+}
+
+.modal-form-item .modal-label-input{
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.modal-form-item .modal-form-input{
+    display: flex;
+}
+
+.modal-form-item .modal-input-icon{
+    width: 46px;
+    height: 38px;
+    font-size: 22px;
+    padding: 6px 12px;
+    color: #495057;
+    background: #e9ecef;
+    border: 0.5px solid #ffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.modal-form-item .modal-input{
+    width: 248px;
+    height: 38px;
+    padding: 6px 12px;
+    background: #e9ecef;
+    border: 0.5px solid #ffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.modal-form-item .modal-checkbox{
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+.modal-form-item .modal-checkbox input{
+    cursor: pointer;
+}
+
+.modal-form-item .modal-button{
+    color: #ffff;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    background: dodgerblue;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.modal-form-item p{
+    text-align: center;
+}
+
+.modal-form-item a{
+    text-decoration: none;
+    color: rgb(38, 116, 213);
+}
+
+.modal-register{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(118, 113, 113, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    /* chuyển sang display: flex  thì nó sẽ hiện lên */
+}
+
+.modal-container .modal-body-register{
+    padding: 20px;
+    height: 380px;
+}
